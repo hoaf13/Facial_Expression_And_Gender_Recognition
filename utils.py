@@ -4,24 +4,24 @@ from keras.utils import get_file
 import numpy as np
 import cv2
 import cvlib as cv
-from config import (LINK_TO_FACE_DETECT,LINK_TO_FACIAL_EXPRESSION_RECOGN, LINK_TO_GENDER_RECOGN,
-                    CROP_SIZE, WEBCAM_HEIGHT, WEBCAM_WIDTH, GENDER_CLASSES, FACIAL_EXPRESSION_CLASSES)
+from config import *
 
 def adjust_face_detect(startX,startY,endX,endY):
-    if startX > 20: startX -= 40
-    if startY > 20: startY -= 40
-    if endX < WEBCAM_WIDTH - 20 : endX += 10
-    if endY < WEBCAM_HEIGHT - 20: endY += 10
+    if startX >= 10: startX -= 10
+    if startY >= 40: startY -= 40
+    if endX <= WEBCAM_WIDTH - 10 : endX += 10
+    if endY <= WEBCAM_HEIGHT - 10: endY += 10
     return startX, startY, endX, endY
 
 def crop_image(image, startX,startY,endX,endY):
     face_crop = np.copy(image[startY:endY,startX:endX])
-    face_crop = cv2.cvtColor(face_crop, cv2.COLOR_BGR2GRAY)
-    face_crop = cv2.resize(face_crop, (CROP_SIZE,CROP_SIZE))
-    face_crop = face_crop.astype("float") / 255.0
-    face_crop = np.array(face_crop)
-    face_crop = np.reshape(face_crop,(1,CROP_SIZE,CROP_SIZE,1))
-    return face_crop
+    gray_face_crop = cv2.cvtColor(face_crop, cv2.COLOR_BGR2GRAY)
+    gray_face_crop = cv2.resize(gray_face_crop, (CROP_SIZE,CROP_SIZE))
+    gray_face_crop = gray_face_crop.astype("float") / 255.0
+    gray_face_crop = np.array(gray_face_crop)
+    gray_face_crop = np.reshape(gray_face_crop,(1,CROP_SIZE,CROP_SIZE,1))
+    return gray_face_crop
+
 
 class FaceDetector:
     

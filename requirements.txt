@@ -1,0 +1,17 @@
+certifi==2020.6.20
+chardet==3.0.4
+cvlib==0.2.5
+h5py==2.10.0
+idna==2.10
+imageio==2.9.0
+imutils==0.5.3
+Keras==2.4.3
+numpy==1.19.1
+opencv-python==4.4.0.42
+Pillow==7.2.0
+progressbar==2.5
+PyYAML==5.3.1
+requests==2.24.0
+scipy==1.5.2
+six==1.15.0
+urllib3==1.25.10

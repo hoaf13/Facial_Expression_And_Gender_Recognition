@@ -8,7 +8,7 @@ Facial Expression Revognition and Gender Recognition builded by CPU.
 - GPU: Mesa Intel® HD Graphics 620 (KBL GT2)
 - Camera: belongs to Lenovo Thinkpad-T570s
 
-![image](https://i.ibb.co/TtpGNvx/2faces.png)
+![image](https://i.ibb.co/0KHk91b/hoa.png)
 
 ## Installation 
 - Clone this project: 

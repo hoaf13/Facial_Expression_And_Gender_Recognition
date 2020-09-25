@@ -1,7 +1,9 @@
 # Facial Expression And Gender Recognition
 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) 
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+![image](https://img.shields.io/badge/Tech-FER-blue) 
+![image](https://img.shields.io/badge/python-3.8-blue) 
 
 ![image](https://i.ibb.co/0KHk91b/hoa.png)
 

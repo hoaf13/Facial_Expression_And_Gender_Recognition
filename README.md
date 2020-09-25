@@ -3,11 +3,6 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) 
 
-Facial Expression Revognition and Gender Recognition run by CPU.
-- CPU: Intel® Core™ i5-7200U CPU @ 2.50GHz × 4.
-- GPU: Mesa Intel® HD Graphics 620 (KBL GT2)
-- Camera: belongs to Lenovo Thinkpad-T570s
-
 ![image](https://i.ibb.co/0KHk91b/hoa.png)
 
 ## Installation 
